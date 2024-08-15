@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            ///closure
+            // function parent() {
+            //     let x = 4
+            //     function child() {
+            //         console.log(x++);
+            //     }
+            //     return child
+            // }
+            // let fn = parent()
+            // fn();
+            // fn();
+            // fn();
+
+            // function parent(x) {
+            //     return function(y){
+            //         console.log(x + y);
+            //     }
+            // }
+            // let a = parent(4)
+            // a(6)
+
+            // function parent(x) {
+            //     return function(y){
+            //         return function (z) {
+            //             console.log(x + y + z);
+            //         }
+            //     }
+            // }
+            // parent(5)(6)(1)
+
+            /// arrow function
+
+            // const gumar = (a,b) => a + b
+            // console.log(gumar(1,4));
+            // console.log(gumar(6,4));
+            const a = 1;
+            /// array method
+
+            ///filtr --> zangvacic veradardznum e mek ayl zangvac, stanum e [tar,index,array]
+            ///find,findlast --> arajin tary, verjin tary
+            //findIndex, findLastIndex --> arajin tari index, verjin tari index
+
+            // let arr = ["Sargis", "Gor", "Anna", "Arman", "Nune", "Aram"]
+            // let arr2 = [3, -8, 12, 17, -21, 4, 6, 97]
+            // let temp = arr2.filter(x => x < 0)
+            // console.log(temp);
+            // console.log(arr2.filter((a, b)=> a > 0 && b % 2 == 0));
+            // console.log(arr.filter(x => x.includes("a")));
+
+            /// map -->
+
+            // let arr = ["Sargis", "Gor", "Anna", "Arman", "Nune", "Aram"]
+            // let arr2 = [3, -8, 12, 17, -21, 4, 6, 97]
+            // let temp = arr2.map(a => a * a)
+            // console.log(temp);
+            // console.log(arr.map(a => a.toUpperCase()));
+            // console.log(arr.map(x => [...x].reverse().join("")));
+
+            ///every --> ardjoq zangvaci bolot tarern en bavararum paymanin
+            ///some --> voreve meky
+            // let arr = ["Sargis", "Gor", "Anna", "Arman", "Nune", "Aram"]
+            // let arr2 = [3, -8, 12, 17, -21, 4, 6, 97]
+            // console.log(arr2.every(a => a > 0)); //false
+            // console.log(arr2.some(a => a > 0)); //true
+            // console.log(arr.every(a => typeof a == "string")); //true
+
+            /// reduce --> ci poxum originaly
+            /// sort -->poxum e originaly
+            // let arr2 = [2, 3, 4]
+            // let s = arr2.reduce((a,b)=> a + b) //a-->zangvaci[0], b-->zangvaci [1,...n]
+            // console.log(s);
+            // console.log(arr2.reduce((a,b) => a + b * b, 0)); //0 --> naxnakan arjeq
+
+            // let arr2 = [-3, 4, -5, 2]
+            // arr2.sort((a, b) => a - b)
+            // console.log(arr2);//achman karg
+
+            // let arr2 = [-3, 4, -5, 2]
+            // arr2.sort((a, b) => b - a)
+            // console.log(arr2);
+
+            // function longestWord(text) {
+            //     return text.split(" ").sort((a,b)=>a.length - b.length).at(-1)
+            // }
+            // console.log(longestWord("i love javaScript"));
+
+            // function longestIndex(text) {
+            //     let temp = text.split(" ")
+            //     let long = temp.toSorted((a,b)=> a.length - b.length).at(-1)
+            //     return temp.indexOf(long)
+            // }
+            // console.log(longestIndex("i love javaScript"));
+        </script>
+    </body>
+</html>
